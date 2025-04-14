@@ -20,6 +20,10 @@ app.get('/resume', (req, res) => {
   res.setHeader('Content-Type', 'application/pdf');
   res.sendFile(path.join(__dirname, 'public', 'Azizul-Hoq-Resume.pdf'));
 });
+app.get('/', (req, res) => {
+  res.send('Hello from the server!');
+});
+
 
 
 app.post('/send-email', (req, res) => {
