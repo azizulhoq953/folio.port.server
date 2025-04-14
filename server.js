@@ -21,8 +21,9 @@ app.get('/resume', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'Azizul-Hoq-Resume.pdf'));
 });
 app.get('/', (req, res) => {
-  res.send('Hello from the server!');
+  res.send('<h1>Welcome to My Portfolio!</h1><p>Feel free to explore my work and contact me.</p>');
 });
+
 
 
 
