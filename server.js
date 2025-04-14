@@ -9,7 +9,7 @@ const port = 5000;
 app.use(cors());
 app.use(bodyParser.json());
 app.use(cors({
-  origin: ["http://localhost:5000","https://portfolioserver953.netlify.app/"], 
+  origin: ["http://localhost:5000","https://portfolio953.netlify.app/"], 
   credentials: true,
 }))
 const transporter = nodemailer.createTransport({
